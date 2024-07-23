@@ -4,12 +4,12 @@ package com.gmail.eamosse.tp2
 data class Student(
     val name: String,
     val code: String,
-    val sexe: Char,
-    val adresse: String,
+    val sexe: String,
+    val address: String,
     val age: Int
 ) {
     init {
-        require(sexe == 'M' || sexe == 'F') {
+        require(sexe == "M" || sexe == "F") {
             "Sexe doit être 'M' ou 'F'"
         }
         require(age >= 0) {

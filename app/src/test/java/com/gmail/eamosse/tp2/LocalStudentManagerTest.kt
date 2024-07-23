@@ -15,6 +15,7 @@ class LocalStudentManagerTest {
     @Before
     fun tearUp() {
         // TODO create an instance of the local student manager
+        manager = LocalStudentManager()
     }
 
     @After
@@ -137,6 +138,4 @@ class LocalStudentManagerTest {
         // Then last should become first and vice versa
         assertTrue(manager.listOf10().isEmpty())
     }
-
-
 }
